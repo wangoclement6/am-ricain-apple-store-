@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>American Apple Store — Smartphones à Ouagadougou</title>
+<style>
+:root{--bg:#070707;--card:#111;--muted:#a9a9a9;--line:#242424;--accent:#fff;--green:#25D366}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:10;background:rgba(7,7,7,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:.5px}.logo span{color:#aaa}
+.hero{padding:70px 0 45px;text-align:center;background:radial-gradient(circle at 50% 0,#242424 0,#070707 48%)}
+.badge{display:inline-block;border:1px solid #333;border-radius:999px;padding:8px 13px;color:#ccc;font-size:13px}
+h1{font-size:clamp(34px,7vw,66px);line-height:.98;margin:18px auto;max-width:850px}
+.hero p{color:#bbb;font-size:17px;max-width:650px;margin:0 auto 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#fff;color:#000;padding:13px 19px;border-radius:13px;font-weight:800}
+.btn.wa{background:var(--green);color:#061b0c}
+section{padding:38px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:18px}.section-title h2{margin:0;font-size:28px}.section-title p{margin:0;color:#888}
+.filters{display:flex;gap:9px;overflow:auto;padding-bottom:10px}.filter{border:1px solid #333;background:#101010;color:#ddd;border-radius:999px;padding:9px 14px;white-space:nowrap;cursor:pointer}.filter.active{background:#fff;color:#000}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}.pic{aspect-ratio:1/1;background:#171717;display:flex;align-items:center;justify-content:center;overflow:hidden}.pic img{width:100%;height:100%;object-fit:cover}.info{padding:15px}.brand{font-size:11px;text-transform:uppercase;color:#888;letter-spacing:1px}.name{font-size:19px;font-weight:800;margin:5px 0}.spec{font-size:13px;color:#aaa;min-height:38px}.price{margin:13px 0;font-weight:800}.small{font-size:12px;color:#777}.card .btn{width:100%;margin-top:8px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:20px;border:1px solid var(--line);border-radius:17px;background:#0d0d0d}.feature b{display:block;margin-bottom:8px}.feature p{color:#999;margin:0;line-height:1.5}
+.contact{background:#111;border:1px solid var(--line);border-radius:22px;padding:30px;text-align:center}.contact h2{margin-top:0}.contact p{color:#aaa}.wa-big{font-size:18px;padding:15px 22px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#777;font-size:13px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.hero{padding-top:50px}}
+@media(max-width:480px){.wrap{padding:0 13px}.grid{gap:10px}.info{padding:12px}.name{font-size:16px}.hero p{font-size:15px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="logo">AMERICAN <span>APPLE STORE</span> 🍎</div><a class="btn wa" href="https://wa.me/22606043742?text=Bonjour%20American%20Apple%20Store%20%F0%9F%91%8B%20Je%20voudrais%20voir%20les%20t%C3%A9l%C3%A9phones%20disponibles." target="_blank">WhatsApp</a></div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<div class="badge">📍 Ouagadougou • Burkina Faso</div>
+<h1>Ton prochain smartphone est peut-être ici.</h1>
+<p>iPhone, Google Pixel, Samsung Galaxy, Tecno et autres smartphones. Consulte le catalogue puis contacte-nous directement sur WhatsApp pour connaître le prix et la disponibilité.</p>
+<a class="btn wa" href="https://wa.me/22606043742?text=Bonjour%20American%20Apple%20Store%20%F0%9F%91%8B%20Je%20viens%20du%20site%20et%20je%20voudrais%20conna%C3%AEtre%20les%20t%C3%A9l%C3%A9phones%20disponibles." target="_blank">💬 Nous contacter sur WhatsApp</a>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-title"><div><h2>Catalogue</h2><p>Prix et disponibilité sur WhatsApp.</p></div></div>
+<div class="filters">
+<button class="filter active" data-filter="all">Tous</button><button class="filter" data-filter="iphone">iPhone</button><button class="filter" data-filter="pixel">Google Pixel</button><button class="filter" data-filter="samsung">Samsung</button><button class="filter" data-filter="tecno">Tecno</button>
+</div>
+<div id="grid" class="grid"></div>
+</div></section>
+
+<section><div class="wrap"><div class="features">
+<div class="feature"><b>📱 Large choix</b><p>iPhone, Pixel, Samsung Galaxy, Tecno et autres modèles selon les arrivages.</p></div>
+<div class="feature"><b>💬 Commande WhatsApp</b><p>Un clic suffit pour demander le prix, le stockage et la disponibilité.</p></div>
+<div class="feature"><b>📍 Ouagadougou</b><p>Contact direct pour les modalités de remise ou de livraison.</p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="contact">
+<h2>Tu cherches un modèle précis ?</h2>
+<p>Envoie le nom du téléphone et ton budget. Nous te répondons sur WhatsApp.</p>
+<a class="btn wa wa-big" href="https://wa.me/22606043742?text=Bonjour%20American%20Apple%20Store%20%F0%9F%91%8B%20Je%20cherche%20un%20t%C3%A9l%C3%A9phone%20pr%C3%A9cis." target="_blank">📲 Écrire sur WhatsApp</a>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 American Apple Store • Ouagadougou, Burkina Faso • WhatsApp : +226 06 04 37 42</div></footer>
+
+<script>
+const products=[
+{cat:"iphone",brand:"Apple",name:"iPhone 11",spec:"64 / 128 / 256 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/IPhone_11_White.svg/512px-IPhone_11_White.svg.png"},
+{cat:"iphone",brand:"Apple",name:"iPhone 13",spec:"128 / 256 / 512 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/IPhone_13_Starlight.svg/512px-IPhone_13_Starlight.svg.png"},
+{cat:"iphone",brand:"Apple",name:"iPhone 15",spec:"128 / 256 / 512 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/IPhone_15_Plus_Blue.svg/512px-IPhone_15_Plus_Blue.svg.png"},
+{cat:"iphone",brand:"Apple",name:"iPhone 16 Pro Max",spec:"256 Go / 512 Go / 1 To",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/IPhone_16_Pro_Max_Natural_Titanium.svg/512px-IPhone_16_Pro_Max_Natural_Titanium.svg.png"},
+{cat:"iphone",brand:"Apple",name:"iPhone 17 Pro Max",spec:"256 Go / 512 Go / 1 To / 2 To",img:"https://images.apple.com/uk/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max-the-most-powerful-and-advanced-pro-models-ever/images/hero/Apple-iPhone-17-Pro-hero-250909-lp.jpg"},
+{cat:"pixel",brand:"Google",name:"Pixel 4",spec:"64 / 128 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Google_Pixel_4_White.jpg/512px-Google_Pixel_4_White.jpg"},
+{cat:"pixel",brand:"Google",name:"Pixel 6",spec:"128 / 256 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Google_Pixel_6_Pro.jpg/512px-Google_Pixel_6_Pro.jpg"},
+{cat:"pixel",brand:"Google",name:"Pixel 8 Pro",spec:"128 / 256 / 512 Go / 1 To",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Google_Pixel_8_Pro.jpg/512px-Google_Pixel_8_Pro.jpg"},
+{cat:"pixel",brand:"Google",name:"Pixel 10",spec:"128 / 256 Go",img:"https://cf-images.dustin.eu/cdn-cgi/image/fit%3Dcontain%2Cformat%3Dauto%2Cquality%3D75%2Cwidth%3D828%2Cfit%3Dcontain/image/d20000130435/google-pixel-10-128gb-indigo.jpg"},
+{cat:"samsung",brand:"Samsung",name:"Galaxy S25 Ultra",spec:"256 / 512 Go / 1 To",img:"https://files.tecnoblog.net/wp-content/uploads/2025/01/galaxy-s25-ultra-titanio-prata-700x700.png"},
+{cat:"samsung",brand:"Samsung",name:"Galaxy A56 5G",spec:"128 / 256 Go",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Samsung_Galaxy_A56_5G.png/512px-Samsung_Galaxy_A56_5G.png"},
+{cat:"tecno",brand:"Tecno",name:"Tecno Camon",spec:"Stockage selon modèle",img:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Tecno_Camon_20_Pro.jpg/512px-Tecno_Camon_20_Pro.jpg"}
+];
+const grid=document.getElementById("grid");
+function render(filter="all"){
+ grid.innerHTML=products.filter(p=>filter==="all"||p.cat===filter).map(p=>{
+ const msg=encodeURIComponent(`Bonjour American Apple Store 👋 Je suis intéressé(e) par le ${p.name}. Pouvez-vous me donner le prix, le stockage disponible et la disponibilité ?`);
+ return `<article class="card"><div class="pic"><img loading="lazy" src="${p.img}" alt="${p.name}"></div><div class="info"><div class="brand">${p.brand}</div><div class="name">${p.name}</div><div class="spec">${p.spec}</div><div class="price">Prix : sur demande</div><div class="small">Disponibilité à confirmer</div><a class="btn wa" href="https://wa.me/22606043742?text=${msg}" target="_blank">Commander sur WhatsApp</a></div></article>`
+ }).join("");
+}
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter)});
+render();
+</script>
+</body></html>
